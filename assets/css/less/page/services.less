@@ -1,7 +1,7 @@
 //out: false
 
 .services {
-    padding-top: 25px;
+    padding-top: 100px;
     padding-bottom: 200px;
     background-image: url('../img/bg-services.png');
     background-repeat: no-repeat;
@@ -27,7 +27,7 @@
               margin-bottom: 12px;
 
               span {
-                color: #FF8C39;
+                color: #BF83FF;
               }
            }
 
@@ -51,9 +51,8 @@
             .card__service {
                 width: 325px;
                 height: 323px;
-                background-color: #FFF;
+                background-color: #F6F6F7;
                 border-radius: 10px;
-                box-shadow: 6px 6px 20px rgba(46, 53, 59, 0.15);
                 position: relative;
                 display: flex;
                 flex-direction: column;
@@ -71,15 +70,17 @@
                     font-weight: 700;
                     line-height: 103%;
                     margin-bottom: 8px;
+                    color: #2E353B;
                 }
 
                 .card__text {
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 137%;
+                    color: #2E353B;
                 }
 
-                .btn__orange {
+                .btn__gradient__card {
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -87,7 +88,7 @@
                     gap: 10px;
                     border-bottom-right-radius: 10px;
                     border-bottom-left-radius: 10px;
-                    background-color: #FF8C39;
+                    background-image: linear-gradient(to right, #7038E7 0%, #3A42D9 49%, #3F1F81 100%);
                     color: #f7f7f7;
                     font-size: 18px;
                     letter-spacing: 0.5px;
@@ -100,7 +101,7 @@
 
                     &:hover {
                         color: #f7f7f7;
-                        background-color: #FF5C5C;
+                        background-image: linear-gradient(to right, #7038E7 0%, #686fe9 63%, #3F1F81 100%);
                     }
                 }
             }
