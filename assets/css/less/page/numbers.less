@@ -1,0 +1,54 @@
+//out: false
+
+.numbers {
+    background-image: url('../img/cover-numbers.png'), linear-gradient(to right, rgba(255, 92, 92, .74), rgba(255, 140, 57, .74));
+    background-repeat: no-repeat;
+    background-position: left 0 bottom 0, top 0 left 0;
+    background-size: 280px, 100%;
+
+    .wrapper {
+        max-width: 953px;
+        width: 100%;
+        padding: 60px 24px;
+        margin-right: 6%;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            text-align: center;
+            color: #f7f7f7;
+
+            .number {
+                font-size: 120px;
+                font-weight: 900;                
+                line-height: 92%;
+                letter-spacing: 3.6px;
+            }
+
+            .text {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 126%;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    @media (max-width: @tablet) {
+        background-image: url('../img/cover-numbers.png'), linear-gradient(to bottom, rgba(255, 92, 92, .74), rgba(255, 140, 57, .74));
+
+        .wrapper {
+            flex-direction: column;
+            padding: 85px 24px 255px 24px;
+            gap: 48px;
+        }
+    }
+}

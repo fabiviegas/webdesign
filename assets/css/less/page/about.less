@@ -1,0 +1,101 @@
+//out: false
+
+.sobre {
+    background-image: url('../img/cover-about.png');
+    background-repeat: no-repeat;
+    background-position: right 0 top 0;
+    background-size: auto 100%;
+    padding-top: 91px;
+    padding-bottom: 109px;
+    margin-top: 132px;
+    margin-bottom: 99px;
+
+    .wrapper {
+        border-radius: 60px 0;
+        background-color: #f7f7f7;
+        box-shadow: -6px 0 20px rgba(46, 53, 59, .15);
+        padding: 71px 82px 72px 96px;
+        width: 100%;
+        max-width: 702px;
+        margin-left: 9%;
+        margin-right: auto;
+
+        .title {
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 126%;
+            letter-spacing: 1.26px;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 126%;
+            letter-spacing: 0.7px;
+            margin-bottom: 32px;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        .text {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 163%;
+            letter-spacing: 0.5px;
+            margin-bottom: 40px;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        .btn__green {
+            width: fit-content;
+        }
+    }
+
+    @media (max-width: @tablet) {
+        padding-top: 62px;
+        padding-bottom: 302px;
+        background-image: url('../img/cover-about-mobile.png'); 
+        background-position: left 0 bottom 0;
+        background-size: 100% auto;
+        margin-bottom: 32px;
+        margin-top: 32px;
+
+        .wrapper {
+            border-radius: 40px 0;
+            padding: 36px 27px 40px 27px;
+            margin-left: 16px;
+            margin-right: 16px;
+            width: calc(100% - 32px);
+
+            .title {
+                font-size: 32px;
+                letter-spacing: 1.3px;
+                margin-bottom: 16px;
+            }
+
+            .subtitle {
+                font-size: 20px;
+                letter-spacing: 0.6px;
+                width: 235px;
+                margin-bottom: 18px;
+            }
+
+            .text {
+                font-size: 16px;
+                letter-spacing: 0.5px;
+                margin-bottom: 32px;
+            }
+
+            .btn__green {
+                width: 100%;
+            }
+        }
+    }
+}
+
