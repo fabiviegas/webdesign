@@ -357,6 +357,11 @@ nav {
   color: #f7f7f7;
   background-position: right center;
 }
+@media (max-width: 900px) {
+  .btn__gradient {
+    font-size: 16px;
+  }
+}
 .btn__white {
   display: flex;
   align-items: center;
@@ -401,8 +406,8 @@ nav {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  width: 85px;
-  height: 85px;
+  width: 75px;
+  height: 75px;
   background-color: #25D366;
   display: flex;
   justify-content: center;
@@ -549,7 +554,7 @@ nav {
   .page__header .wrapper .is--mobile .navbar__overlay.open .overlay__content .overlay__header {
     display: flex;
     justify-content: flex-end;
-    margin: 30px 30px 109px 30px;
+    margin: 30px 30px 72px 30px;
   }
   .page__header .wrapper .is--mobile .navbar__overlay.open .overlay__content .overlay__header .overlay__close {
     width: fit-content;
@@ -952,7 +957,7 @@ nav {
 @media (max-width: 900px) {
   .sobre {
     padding-top: 62px;
-    padding-bottom: 302px;
+    padding-bottom: 360px;
     background-image: url('../img/cover-about-mobile.png');
     background-position: left 0 bottom 0;
     background-size: 100% auto;
@@ -1186,11 +1191,11 @@ nav {
   margin: 0;
   width: 10px;
   height: 10px;
-  background-color: #FFAF76;
+  background-color: #a1b9da;
   border-radius: 100%;
 }
 .skills .wrapper .owl-carousel.owl-theme.skills__carousel .owl-dots .owl-dot.active span {
-  background-color: #FF8C39;
+  background-color: #378EFF;
 }
 .skills .wrapper .owl-carousel.owl-theme.skills__carousel .owl-dots.disabled {
   display: none;
@@ -1466,7 +1471,7 @@ nav {
   gap: 52px;
 }
 .testimonials .wrapper .background {
-  background-image: linear-gradient(to right, #FF8C39, #FF5C5C);
+  background-image: linear-gradient(to right, #171B76, #3F1F81);
   height: 310px;
   width: 55%;
   position: absolute;
@@ -1502,13 +1507,13 @@ nav {
 }
 .testimonials .wrapper .heading .top .subtitle .link {
   font-weight: 700;
-  color: #2E353B;
+  color: #f7f7f7;
   text-decoration: underline;
   transition: all linear 0.15s;
   display: inline;
 }
 .testimonials .wrapper .heading .top .subtitle .link:hover {
-  color: #FF8C39;
+  color: #88b1e7;
 }
 .testimonials .wrapper .heading .bottom {
   display: flex;
@@ -1553,7 +1558,7 @@ nav {
 }
 .testimonials .wrapper .owl-carousel.owl-theme.testimonials__carousel .card__testimonial {
   border-radius: 20px;
-  background-color: #FFF;
+  background-color: #F6F6F7;
   box-shadow: -6px 6px 25px rgba(46, 53, 59, 0.15);
   width: 330px;
   height: 300px;
@@ -1580,13 +1585,14 @@ nav {
   font-weight: 700;
   line-height: 134%;
   letter-spacing: 0.6px;
-  color: #FF5C5C;
+  color: #2E353B;
   margin-bottom: 6px;
 }
 .testimonials .wrapper .owl-carousel.owl-theme.testimonials__carousel .card__testimonial .card__heading .customer .test__info .enterprise {
   font-size: 14px;
   font-weight: 500;
   line-height: 134%;
+  color: #2E353B;
 }
 .testimonials .wrapper .owl-carousel.owl-theme.testimonials__carousel .card__testimonial .card__heading .icon__google {
   width: fit-content;
@@ -1601,6 +1607,7 @@ nav {
   font-size: 14px;
   line-height: 134%;
   font-weight: 400;
+  color: #2E353B;
 }
 @media (max-width: 1100px) {
   .testimonials {
@@ -1627,6 +1634,9 @@ nav {
     margin: 0 auto 32px auto;
     padding: 0 24px;
   }
+  .testimonials .wrapper .heading .top .title {
+    font-size: 42px;
+  }
   .testimonials .wrapper .owl-carousel.owl-theme.testimonials__carousel {
     margin-top: 0;
   }
@@ -1646,11 +1656,11 @@ nav {
     margin: 0;
     width: 10px;
     height: 10px;
-    background-color: #FFAF76;
+    background-color: #a1b9da;
     border-radius: 100%;
   }
   .testimonials .wrapper .owl-carousel.owl-theme.testimonials__carousel .owl-dots .owl-dot.active span {
-    background-color: #FF8C39;
+    background-color: #378EFF;
   }
   .testimonials .wrapper .owl-carousel.owl-theme.testimonials__carousel .owl-dots.disabled {
     display: none;
@@ -1679,11 +1689,7 @@ nav {
   width: 728px;
 }
 .cta-2 .wrapper .content .title {
-  background: linear-gradient(to right, #FF5C5C, #FF8C39);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+  color: #f7f7f7;
   font-size: 48px;
   font-weight: 800;
   letter-spacing: 1.4px;
@@ -1701,15 +1707,15 @@ nav {
 }
 @media (max-width: 900px) {
   .cta-2 {
-    padding-top: 74px;
-    padding-bottom: 150px;
+    padding-top: 84px;
+    padding-bottom: 84px;
     background-image: url('../img/bg-cta-2-mobile.png');
   }
   .cta-2 .wrapper {
     padding: 0 20px;
     flex-direction: column;
     align-items: center;
-    gap: 92px;
+    gap: 62px;
   }
   .cta-2 .wrapper .content {
     text-align: center;
@@ -1717,6 +1723,7 @@ nav {
   }
   .cta-2 .wrapper .content .title {
     margin-bottom: 32px;
+    font-size: 38px;
   }
   .cta-2 .wrapper .content .subtitle {
     font-size: 24px;
@@ -1757,14 +1764,14 @@ nav {
 }
 .page__footer .footer__content .wrapper .footer__nav .col--1 .nav__link,
 .page__footer .footer__content .wrapper .footer__nav .col--2 .nav__link {
-  color: #2E353B;
+  color: #f7f7f7;
   font-size: 16px;
   font-weight: 400;
   transition: all linear 0.15s;
 }
 .page__footer .footer__content .wrapper .footer__nav .col--1 .nav__link:hover,
 .page__footer .footer__content .wrapper .footer__nav .col--2 .nav__link:hover {
-  color: #FF8C39;
+  color: #88b1e7;
   cursor: pointer;
 }
 .page__footer .footer__content .wrapper .contact {
@@ -1779,20 +1786,31 @@ nav {
   font-size: 16px;
   font-weight: 400;
   transition: all linear 0.15s;
-  color: #222;
+  color: #f7f7f7;
 }
 .page__footer .footer__content .wrapper .contact .contact__link .icon__contact {
   width: fit-content;
 }
 .page__footer .footer__content .wrapper .contact .contact__link:hover {
-  color: #FF8C39;
+  color: #88b1e7;
   cursor: pointer;
+}
+.page__footer .footer__content .wrapper .contact .contact__location {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #f7f7f7;
+}
+.page__footer .footer__content .wrapper .contact .contact__location .icon__contact {
+  width: fit-content;
 }
 .page__footer .footer__content .wrapper .time {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: #222;
+  color: #f7f7f7;
   font-size: 16px;
   line-height: 149%;
 }
@@ -1800,7 +1818,6 @@ nav {
   width: fit-content;
 }
 .page__footer .footer__copyrights {
-  background-color: #2E353B;
   margin: 0 auto;
   padding: 30px 24px;
 }
@@ -1808,7 +1825,7 @@ nav {
   font-size: 16px;
   line-height: 134%;
   font-weight: 400;
-  color: #FFF;
+  color: #F7f7f7;
   text-align: center;
 }
 @media screen and (max-width: 1200px) {
