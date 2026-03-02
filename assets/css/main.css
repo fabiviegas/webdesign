@@ -1788,8 +1788,8 @@ nav {
   transition: all linear 0.15s;
   color: #f7f7f7;
 }
-.page__footer .footer__content .wrapper .contact .contact__link .icon__contact {
-  width: fit-content;
+.page__footer .footer__content .wrapper .contact .contact__link .icon {
+  width: 20px;
 }
 .page__footer .footer__content .wrapper .contact .contact__link:hover {
   color: #88b1e7;
