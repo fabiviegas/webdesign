@@ -319,7 +319,7 @@ nav {
   left: 0;
   width: 0%;
   height: 100%;
-  background-image: linear-gradient(to right, #7334E5, #378EFF);
+  background-image: linear-gradient(to right, #7365ce, #4f90e6);
   transition: all 0.3s;
   border-radius: 10px;
   z-index: -1;
@@ -362,6 +362,34 @@ nav {
     font-size: 16px;
   }
 }
+.btn__ice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0.5px;
+  color: #F7F7F7;
+  padding: 14px 28px 14px 28px;
+  background-color: #7365ce;
+  transition: all linear 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  width: fit-content;
+}
+.btn__ice:hover {
+  color: #f7f7f7;
+  background-color: #9C8CFF;
+}
+@media (max-width: 900px) {
+  .btn__ice {
+    font-size: 16px;
+  }
+}
 .btn__white {
   display: flex;
   align-items: center;
@@ -394,7 +422,7 @@ nav {
 .tag__purple {
   padding: 3px 8px 3px 8px;
   border-radius: 6px;
-  background-color: #7334E5;
+  background-color: #7365ce;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -502,7 +530,7 @@ nav {
 }
 .page__header .wrapper .is--desktop .links a:hover {
   cursor: pointer;
-  color: #88b1e7;
+  color: #AFC6FF;
 }
 .page__header .wrapper .is--mobile {
   display: none;
@@ -586,24 +614,24 @@ nav {
   max-width: 1230px;
   margin-left: auto;
   margin-right: 28px;
-  padding: 247px 0 126px 24px;
+  padding: 217px 0 126px 24px;
   display: flex;
   justify-content: center;
   gap: 0;
 }
 .hero .wrapper .content {
-  width: 578px;
+  width: 620px;
   flex-shrink: 0;
 }
 .hero .wrapper .content .title {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 42px;
   letter-spacing: 0.5px;
   line-height: 108%;
   margin-bottom: 16px;
 }
 .hero .wrapper .content .title span {
-  color: #BF83FF;
+  color: #AFC6FF;
 }
 .hero .wrapper .content .description {
   font-size: 24px;
@@ -741,6 +769,9 @@ nav {
   letter-spacing: 1.6px;
   margin-bottom: 8px;
 }
+.steps .wrapper .heading .title span {
+  color: #AFC6FF;
+}
 .steps .wrapper .heading .description {
   font-size: 20px;
   line-height: 126%;
@@ -783,7 +814,7 @@ nav {
   font-weight: 600;
   line-height: 126%;
   letter-spacing: 0.7px;
-  color: #378EFF;
+  color: #AFC6FF;
   margin-bottom: 8px;
   text-align: left;
 }
@@ -1019,7 +1050,7 @@ nav {
   margin-bottom: 12px;
 }
 .services .wrapper .heading .title span {
-  color: #BF83FF;
+  color: #AFC6FF;
 }
 .services .wrapper .heading .description {
   font-size: 20px;
@@ -1072,7 +1103,7 @@ nav {
   gap: 10px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  background-image: linear-gradient(to right, #7038E7 0%, #3A42D9 49%, #3F1F81 100%);
+  background-color: #7365ce;
   color: #f7f7f7;
   font-size: 18px;
   letter-spacing: 0.5px;
@@ -1085,7 +1116,7 @@ nav {
 }
 .services .wrapper .services__list .card__service .btn__gradient__card:hover {
   color: #f7f7f7;
-  background-image: linear-gradient(to right, #7038E7 0%, #686fe9 63%, #3F1F81 100%);
+  background-color: #9C8CFF;
 }
 @media (max-width: 900px) {
   .services {
@@ -1223,7 +1254,7 @@ nav {
   background-size: 100%;
 }
 .portfolio .wrapper {
-  max-width: 960px;
+  max-width: 1020px;
   padding: 0 24px;
   margin: 0 auto;
   display: flex;
@@ -1240,6 +1271,7 @@ nav {
   line-height: 126%;
   letter-spacing: 2px;
   margin-bottom: 16px;
+  color: #AFC6FF;
 }
 .portfolio .wrapper .heading .description {
   font-size: 24px;
@@ -1257,7 +1289,7 @@ nav {
   gap: 100px;
 }
 .portfolio .wrapper .jobs__list .job {
-  max-width: 900px;
+  max-width: 1020px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1266,20 +1298,25 @@ nav {
 }
 .portfolio .wrapper .jobs__list .job .cover {
   width: 100%;
-  max-width: 488px;
+  max-width: 520px;
+  flex-shrink: 0;
 }
 .portfolio .wrapper .jobs__list .job .content {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  max-width: 340px;
+  width: 100%;
+  flex-shrink: 0;
 }
 .portfolio .wrapper .jobs__list .job .content .job__title {
   margin-top: 6px;
   margin-bottom: 8px;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
-  line-height: 137%;
+  line-height: 107%;
   letter-spacing: 1.2px;
+  color: #AFC6FF;
+  margin-top: 8px;
 }
 .portfolio .wrapper .jobs__list .job .content .job__description {
   font-size: 14px;
@@ -1471,7 +1508,7 @@ nav {
   gap: 52px;
 }
 .testimonials .wrapper .background {
-  background-image: linear-gradient(to right, #171B76, #3F1F81);
+  background-image: linear-gradient(to right, #AFC6FF, #3F1F81);
   height: 310px;
   width: 55%;
   position: absolute;
@@ -1771,7 +1808,7 @@ nav {
 }
 .page__footer .footer__content .wrapper .footer__nav .col--1 .nav__link:hover,
 .page__footer .footer__content .wrapper .footer__nav .col--2 .nav__link:hover {
-  color: #88b1e7;
+  color: #baaaf3;
   cursor: pointer;
 }
 .page__footer .footer__content .wrapper .contact {
@@ -1792,7 +1829,7 @@ nav {
   width: 20px;
 }
 .page__footer .footer__content .wrapper .contact .contact__link:hover {
-  color: #88b1e7;
+  color: #baaaf3;
   cursor: pointer;
 }
 .page__footer .footer__content .wrapper .contact .contact__location {

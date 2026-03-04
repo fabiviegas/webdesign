@@ -9,7 +9,7 @@
     background-size: 100%;
 
     .wrapper {
-        max-width: 960px;
+        max-width: 1020px;
         padding: 0 24px;
         margin: 0 auto;
         display: flex;
@@ -26,6 +26,7 @@
                 line-height: 126%;
                 letter-spacing: 2.0px;
                 margin-bottom: 16px;
+                color: #AFC6FF;
             }
 
             .description {
@@ -47,7 +48,7 @@
             gap: 100px;
 
             .job {
-                max-width: 900px;
+                max-width: 1020px;
                 width: 100%;
                 display: flex;
                 align-items: center;
@@ -56,21 +57,26 @@
 
                 .cover {
                     width: 100%;
-                    max-width: 488px;
+                    max-width: 520px;
+                    flex-shrink: 0;
                 }
 
                 .content {
                     display: flex;
                     flex-direction: column;
-                    width: 300px;
+                    max-width: 340px;
+                    width: 100%;
+                    flex-shrink: 0;
                     
                     .job__title {
                         margin-top: 6px;
                         margin-bottom: 8px;
-                        font-size: 24px;
+                        font-size: 22px;
                         font-weight: 700;
-                        line-height: 137%;
+                        line-height: 107%;
                         letter-spacing: 1.2px;
+                        color: #AFC6FF;
+                        margin-top: 8px;
                     }
 
                     .job__description {
